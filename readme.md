@@ -13,21 +13,34 @@
 - flask-marshmallow - serializer/deserializer JSON
 - flask-restful - библиотека для удобного роутинга
 
-# Установка
+# Установка (linux)
 
 1. Склонируйте этот репозиторий
 ```
-git clone https://github.com/chetambrat/WeatherProject
+git clone https://github.com/chetambrat/RESTful_car_service
 ```
 2. Перейдите в папку
 ```
 cd WeatherProject
 ```
-3. Установите зависимости
+3. Установите venv
 ```
-sudo docker-compose build
+pip install venv
 ```
-
+4. Перейдите в venv
+```
+source venv/bin/activate
+```
+5. Установите зависимости
+```
+pip install -r requirements.txt
+```
+5. Запустите приложение
+```
+export FLASK_APP=app.py
+flask run
+```
+Приложение будет доступно по адресу http://127.0.0.1:5000/
 # Структура БД
 ![Database Structure](./images/db_structure.png)
 
